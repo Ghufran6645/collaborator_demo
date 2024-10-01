@@ -5,21 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Flex Item Usecase</title>
+    <style>
+        .parent{
+            display: flex;
+            justify-content: space-between;
+            height: 10vh;
+            align-items: center;
+        }
+        .parent_logo{
+
+        }
+        .parent_menu{
+            display: flex;
+            gap: 6rem;
+
+        }
+        .parent_logo_img{
+            width: 12vw;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: red;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: orange;
+        }
+        #home{
+            color: red;
+        }
+        #about{
+            color: green;
+        }
+        #portfolio{
+           color: blue;
+        }
+        #login{
+           color: olivedrab;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <!-----parent section-->
     <section class="parent">
     <!-------Flex item-1-->
         <section class="parent_logo">
-            <img src="logo.jpeg" alt="Error">
+            <img src="logo.png" alt="Error" class="parent_logo_img">
         </section>
         <!------flex item-2-->
         <section class="parent_menu">
-            <a href="#"><i class="fa fa-home"></i>Home</a>
-            <a href="#"><i class="fa fa-info-circle"></i>About</a>
-            <a href="#"><i class="fa fa-briefcase"></i>Portfolio</a>
-            <a href="#"><i class="fa fa-sign-in"></i>Login</a>
+            <a href="#home"><i class="fa fa-home"></i>Home</a>
+            <a href="#about"><i class="fa fa-info-circle"></i>About</a>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+            <a href="#login"><i class="fa fa-sign-in"></i>Login</a>
         </section>
     </section>
+    <section id="home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta amet excepturi perferendis earum rem corporis harum asperiores. Expedita a quisquam, ea ex quas corporis eum reiciendis! Consequatur aspernatur accusamus, velit omnis porro voluptatem. Natus accusantium ea incidunt explicabo odio blanditiis ex minima distinctio. Dolorem similique, aliquid, enim vitae aut quod hic libero vel magnam exercitationem iste magni eum mollitia odio nemo sunt sed obcaecati culpa consectetur ipsa deserunt dignissimos? Veritatis tempore quis porro qui unde? Impedit voluptatum nisi obcaecati mollitia, inventore, magni aspernatur veniam dolore explicabo tempora consequatur ducimus debitis possimus voluptate omnis expedita laborum veritatis saepe minima quo! Veritatis!</section>
+    <section id="about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere iure aut quod ratione ipsum doloribus tempora asperiores animi corporis voluptatum, delectus possimus aspernatur, earum dolor nam repellat consequatur vero molestiae doloremque nulla sapiente quasi maiores cum est! Aperiam facere dolores est id unde exercitationem! Distinctio obcaecati quisquam expedita laboriosam consectetur.</section>
+    <section id="portfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex deserunt consequuntur eos corporis sunt minus impedit eum dicta, iste ipsam consectetur omnis tempore eveniet doloribus cupiditate magni doloremque aut illo qui. Quaerat sunt blanditiis amet vero sapiente suscipit voluptatem laboriosam perferendis! Fugit cum dicta minima molestias molestiae et voluptatibus!</section>
+    <section id="login">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto corporis, odio soluta error voluptatem dolorum culpa quidem quo sit delectus. Nihil asperiores unde non consequatur sapiente architecto inventore, nesciunt dolor itaque labore ipsam suscipit tempore similique nobis blanditiis iusto ea nam quas nulla. Corporis culpa mollitia ex alias aspernatur.</section>
 </body>
 </html>
