@@ -1,0 +1,3 @@
+CSS flex:
+1. display: flex;
+used to convert block level display to inlin edisplay
